@@ -29,4 +29,10 @@ The shared page header and footer live in `base.html`. Page content remains in e
 
 ## Preview
 
-Run `python3 -m http.server 8000` from this directory and visit `http://localhost:8000`. The root displays the homepage directly; pages are available as `/about.html`, `/research.html`, and so on.
+Run command from this directory and visit `http://localhost:8000`.
+
+```bash
+python3 -m http.server 8000
+```
+
+The root displays the homepage directly; pages are available as `/about.html`, `/research.html`, and so on.
