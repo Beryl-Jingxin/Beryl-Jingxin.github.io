@@ -1,0 +1,109 @@
+\documentclass{settings} % Use the custom settings.cls style
+\usepackage[dvipsnames]{xcolor}
+\usepackage[
+    colorlinks=true,
+    urlcolor=RoyalBlue,
+    linkcolor=black,
+    citecolor=black
+]{hyperref}
+\usepackage{textcomp} 
+
+% Icon
+\usepackage{fontawesome5}
+\newcommand{\weblink}[1]{%
+    \hspace{0.12em}%
+    \href{#1}{\textcolor{RoyalBlue}{\raisebox{0.1ex}{\scriptsize\faIcon{external-link-alt}}}}%
+}
+
+\usepackage[left=0.7in,top=0.6in,right=0.7in,bottom=0.6in]{geometry} 
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Publications\hspace{-4mm}} 
+
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{RoyalPurple}{#1}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+\setlength{\leftmargin}{1.5em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+
+\begin{document}
+
+% =================================================
+%	First-author and Corresponding-author
+% =================================================
+
+\begin{rSection}{First-author and Corresponding-author$^*$ papers} 
+
+\item \textbf{Jingxin Zhang}$^*$, Christian Hill, Sergei N. Yurchenko, Jonathan Tennyson$^*$. 
+\textit{The ExoMolHR2026 High-Resolution Molecular Spectroscopic Database: Standardized Data Products and Web Tools}. 
+To be submitted (2026)
+
+\item \textbf{Jingxin Zhang}$^*$, Sergei N. Yurchenko, Jonathan Tennyson$^*$. 
+\textit{PyExoCross 2.0: A Python Framework for LTE and non-LTE Spectroscopic Post-processing of Atomic and Molecular Line Lists}. 
+Submitted (2026)
+
+\item Qingyang Liu, \textbf{Jingxin Zhang}$^*$, Haohua Duan$^*$, Ramin Yahyapour$^*$. 
+\textit{MET-C3: Mixed Exogenous–Temporal Dependency Modeling for Non-Stationary Time Series Forecasting}. 
+Submitted (2026)
+
+\item \textbf{Jingxin Zhang}$^*$, Christian Hill, Jonathan Tennyson, Sergei N. Yurchenko.
+\href{https://doi.org/10.3847/1538-4365/ada288}{\textit{ExoMolHR: A Relational Database of Empirical High-Resolution Molecular Spectra}}. 
+ApJS, \textbf{276}(2):67, (2025). 
+
+\item \textbf{Jingxin Zhang}$^*$, Jonathan Tennyson$^*$, Sergei N. Yurchenko. 
+\href{https://doi.org/10.1093/rasti/rzae016}{\textit{PyExoCross: a Python program for generating spectra and cross-sections from molecular line lists}}.
+RASTI, \textbf{3}, 257–287, (2024). 
+
+
+\end{rSection}
+
+
+% =================================================
+%	Co-author
+% =================================================
+
+\begin{rSection}{Co-author papers}
+
+\item Terrance G. Y. Corey, \textbf{Jingxin Zhang}, Christian Hill, Sergei N. Yurchenko, Jonathan Tennyson$^*$.
+\href{https://doi.org/10.1093/rasti/rzag081}{\textit{A formal update of the ExoMol Database Collection}}.
+RASTI, rzag081, (2026).
+
+\item Qing-He Ni, Rujia Wang, Tianyang Xie, \textbf{Jingxin Zhang}, Christian Hill, Sergei N. Yurchenko, Jonathan Tennyson$^*$. 
+\href{http://dx.doi.org/10.1093/rasti/rzaf065}{\textit{ExoAtom: A Database of Atomic Spectra in ExoMol Format}}. 
+RASTI, \textbf{5}, rzaf065, (2025).
+
+\item Georgi B. Mitev, Marco Pezzella, Charles A. Bowesman, \textbf{Jingxin Zhang}, Sergei N. Yurchenko, Jonathan Tennyson$^*$. 
+\href{https://doi.org/10.1093/mnras/staf729}{\textit{ExoMol Photodissociation Cross Sections – II: Continuum Absorption and Predissociation Spectra for the Hydroxyl Radical}}.
+MNRAS, \textbf{539}(4):3732–3740, (2025).
+
+\item Georgi B. Mitev, Charles A. Bowesman, \textbf{Jingxin Zhang}, Sergei N. Yurchenko, Jonathan Tennyson$^*$.
+\href{https://doi.org/10.1093/mnras/stae2803}{\textit{ExoMol line lists – LXI. A trihybrid line list for rovibronic transitions of the hydroxyl radical (OH)}}.
+MNRAS, \textbf{536}(4):3401–3420, (2025).
+
+\item Sergei N. Yurchenko$^*$, ... \textbf{Jingxin Zhang}, Jonathan Tennyson$^*$. 
+\href{https://doi.org/10.1093/mnras/stae1849}{\textit{ExoMol line lists – LX. Molecular line list for the ammonia isotopologue $^{15}$NH$_3$}}.  
+MNRAS, \textbf{533}(3):3442–3456, (2024). 
+
+\item Jonathan Tennyson$^*$, Sergei N. Yurchenko, \textbf{Jingxin Zhang} et al.
+\href{https://doi.org/10.1016/j.jqsrt.2024.109083}{\textit{The 2024 Release of the ExoMol Database: Molecular Line Lists for Exoplanet and Other Hot Atmospheres}}. 
+JQSRT, \textbf{326}:109083, (2024). 
+
+\item Jonathan Tennyson$^*$, Marco Pezzella, \textbf{Jingxin Zhang}, Sergei N. Yurchenko.
+\href{https://doi.org/10.1093/rasti/rzad014}{\textit{Data structures for photoabsorption within the ExoMol project}}. 
+RASTI, \textbf{2}, 231–237, (2023). 
+
+
+\end{rSection}
+
+
+\end{document}

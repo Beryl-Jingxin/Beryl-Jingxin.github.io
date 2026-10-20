@@ -1,0 +1,104 @@
+\documentclass{settings} 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[
+    colorlinks=true,
+    urlcolor=RoyalBlue,
+    linkcolor=black,
+    citecolor=black
+]{hyperref}
+\usepackage{textcomp} 
+
+% Icon
+\usepackage{fontawesome5}
+\newcommand{\weblink}[1]{%
+    \hspace{0.12em}%
+    \href{#1}{\textcolor{RoyalBlue}{\raisebox{0.1ex}{\scriptsize\faIcon{external-link-alt}}}}%
+}
+
+\usepackage[left=0.7in,top=0.6in,right=0.7in,bottom=0.6in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+
+\name{Conferences\hspace{-4mm}} 
+
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{RoyalPurple}{#1}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+\setlength{\leftmargin}{1.5em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+
+\begin{document}
+
+% =================================================
+%	Oral presentations
+% =================================================
+
+\begin{rSection}{Oral presentations} \itemsep -2pt
+
+\textbf{ICAMDATA 2024}
+\weblink{https://icamdata.nwnu.edu.cn/} 
+\hfill 22--26 Sep 2024 \\
+\textit{The ExoMol Database: developments and the 2024 data release}
+\weblink{https://icamdata.nwnu.edu.cn/static/pdf/ABSTRACTS_BOOK.pdf}\hfill \textit{Lanzhou, China} 
+
+\textbf{HRMS 2024}
+\weblink{https://eventi.unibo.it/hrms-2024-bologna} 
+\hfill 2--6 Sep 2024 \\ 
+\textit{ExoMolHR: a relational database of empirical high-resolution molecular spectra}
+\weblink{https://eventi.unibo.it/hrms-2024-bologna/book-of-abstracts-and-programme}
+\hfill \textit{Bologna, Italy}
+
+\textbf{London Exoplanet Day} 
+\hfill 19 Dec 2023 \\
+\textit{The ExoMol database: developments and the 2024 data release}
+\hfill \textit{London, UK}
+
+\end{rSection}
+
+% =================================================
+%	Poster presentations
+% =================================================
+
+\begin{rSection}{Poster presentations} \itemsep -2pt
+
+\textbf{Exoplanets 5}
+\weblink{https://exoplanets5.org/} 
+\hfill 17--21 Jun 2024 \\ 
+\textit{The ExoMol Database: developments and the 2024 data release}
+\weblink{https://exoplanets5.org/posterspreview/} 
+\hfill \textit{Leiden, Netherlands}
+
+\textbf{HRMS 2023}
+\weblink{https://blog.u-bourgogne.fr/hrms2023/} 
+\hfill 28 Aug--1 Sep 2023 \\ 
+\textit{Development of the ExoMol database}
+\weblink{https://hrms.u-bourgogne.fr/Program/AbsBook-HRMS-28-HRefs.pdf} 
+\hfill \textit{Dijon, France}
+
+\textbf{UKEXOM 2023}
+\weblink{https://sites.google.com/view/ukexom2023} 
+\hfill 8--10 Aug 2023 \\ 
+\textit{Development of the ExoMol database}
+\weblink{https://drive.google.com/file/d/1sN2Vzf9Tg2gLn1FS0jY2tA00WXVfAQUQ/view} 
+\hfill \textit{London, UK}
+
+\textbf{Spectroscopy of exoplanets at high resolution}
+\weblink{https://royalsociety.org/science-events-and-lectures/2023/02/spectroscopy-exoplanets/} 
+\hfill 6--7 Feb 2023 \\ 
+\textit{New features in the ExoMol database}
+\hfill \textit{Northampton, UK}
+
+\end{rSection}
+
+
+\end{document}
