@@ -207,7 +207,7 @@ footer a:hover {
 .home-art {
   position: absolute;
   inset: 0;
-  background: url('../assets/ink-celestial-hero-v4.png') center/cover no-repeat;
+  background: url('../figures/background.png') center/cover no-repeat;
   transform: scale(1.035);
   will-change: transform
 }
@@ -387,7 +387,7 @@ footer a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('../assets/ink-shanhai-loop-v2.png') center 53%/cover no-repeat;
+  background: url('../figures/banner.png') center 53%/cover no-repeat;
   opacity: .25;
   filter: saturate(.7)
 }
@@ -1282,7 +1282,7 @@ footer a:hover {
 
 /* Celestial atlas: crisp source art and a navigable observatory index. */
 .home-art {
-  background-image: url('../assets/ink-celestial-hero-v4.png');
+  background-image: url('../figures/background.png');
   background-position: center center
 }
 
@@ -1610,7 +1610,7 @@ footer a:hover {
 }
 
 .home-art {
-  background: url('../assets/ink-celestial-hero-v4.png') center/cover no-repeat;
+  background: url('../figures/background.png') center/cover no-repeat;
   transform: none
 }
 
@@ -1619,7 +1619,7 @@ footer a:hover {
 }
 
 .page-banner::before {
-  background-image: url('../assets/ink-shanhai-loop-v2.png')
+  background-image: url('../figures/banner.png')
 }
 
 .home-content {
@@ -2333,7 +2333,7 @@ footer a:hover {
 }
 
 .home-hero {
-  background: #ebe7dc url('../assets/ink-celestial-hero-v4.png') center/cover no-repeat
+  background: #ebe7dc url('../figures/background.png') center/cover no-repeat
 }
 
 .home-art {
@@ -2357,7 +2357,7 @@ footer a:hover {
 
 @media(max-width:650px) {
   .home-hero {
-    background-image: url('../assets/ink-celestial-hero-v4.png')
+    background-image: url('../figures/background.png')
   }
 
   .home-art {
@@ -2428,7 +2428,7 @@ button {
 }
 
 .home-hero {
-  background: #d6e0e3 url('../assets/ink-celestial-hero-v4.png') center/cover no-repeat
+  background: #d6e0e3 url('../figures/background.png') center/cover no-repeat
 }
 
 .home-veil {
@@ -2628,7 +2628,7 @@ button {
 }
 
 .page-banner::before {
-  background: url('../assets/ink-shanhai-loop-v2.png') center 42%/cover no-repeat;
+  background: url('../figures/banner.png') center 42%/cover no-repeat;
   opacity: .32;
   filter: saturate(.7)
 }
@@ -2804,7 +2804,7 @@ button {
 
 @media(max-width:650px) {
   .home-hero {
-    background-image: url('../assets/ink-celestial-hero-v4.png');
+    background-image: url('../figures/background.png');
     background-position: 52% center
   }
 
@@ -2867,7 +2867,7 @@ button {
   width: 100%;
   aspect-ratio: auto;
   min-height: clamp(650px, 55vw, 820px);
-  background-image: url('../assets/ink-celestial-hero-v4.png')
+  background-image: url('../figures/background.png')
 }
 
 .home-hero .celestial {
@@ -4426,7 +4426,7 @@ body:has(.home-hero) .home-hero {
 
 /* Seamless one-way scroll of the new panoramic ink roll. */
 .page-banner::before {
-  background-image: url('../assets/ink-shanhai-loop-v2.png');
+  background-image: url('../figures/banner.png');
   background-repeat: repeat-x;
   background-size: 1500px auto;
   background-position: 50% 7%;
@@ -4494,11 +4494,11 @@ body:has(.home-hero) .home-hero {
 
 /* Refined paintings, open water, and a soft seam in the moving scroll. */
 .home-hero {
-  background-image: url('../assets/ink-celestial-hero-v4.png')
+  background-image: url('../figures/background.png')
 }
 
 .page-banner::before {
-  background-image: url('../assets/ink-shanhai-loop-v2.png');
+  background-image: url('../figures/banner.png');
   opacity: .35
 }
 
@@ -4591,7 +4591,7 @@ body:has(.home-hero) .home-hero {
 }
 
 .page-banner::before {
-  background-image: url('../assets/ink-shanhai-loop-v2.png');
+  background-image: url('../figures/banner.png');
   background-repeat: repeat-x;
   background-size: auto 324px;
   background-position: calc(50% - 486px) 50%;

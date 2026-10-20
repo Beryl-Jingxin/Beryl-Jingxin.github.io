@@ -1,12 +1,16 @@
 # Jingxin Zhang academic website
 
+
+## Website
+
+[https://beryl-jingxin.github.io](https://beryl-jingxin.github.io)
+
 ## Files
 
 - Root HTML files: homepage, about, research, publications, conferences, and contact
 - `base.html`: shared page shell
 - `theme/`: stylesheet and interactions
-- `assets/`: backgrounds
-- `figures/`: selected research figures and project thumbnails
+- `figures/`: background, banner, and selected research figures and project thumbnails
 - `data/publications.tex`: author roles and manuscript status
 - `data/publications.bib`: publication order, authors, full journal names, and DOI links
 - `data/conferences.tex`: talks, posters, dates, locations, and links
