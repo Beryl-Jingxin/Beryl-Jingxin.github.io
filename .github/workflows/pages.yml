@@ -22,11 +22,10 @@ jobs:
         run: python3 scripts/build-site.py
       - name: Assemble site
         run: |
-          mkdir -p _site/theme _site/data _site/assets _site/figures
+          mkdir -p _site/theme _site/data _site/figures
           cp index.html about.html research.html publications.html conferences.html contact.html _site/
           cp theme/style.css theme/script.js _site/theme/
           cp data/*-data.js data/JingxinZhang_CV.pdf _site/data/
-          if [ -d assets ]; then cp -R assets/. _site/assets/; fi
           cp -R figures/. _site/figures/
       - uses: actions/upload-pages-artifact@v4
         with:

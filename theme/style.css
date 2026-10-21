@@ -1183,7 +1183,7 @@ footer a:hover {
 
 /* Celestial atlas: crisp source art and a navigable observatory index. */
 .home-art {
-  background-image: url('../figures/background.png');
+  background-image: url('../figures/background.webp');
   background-position: center center
 }
 
@@ -1505,7 +1505,7 @@ footer a:hover {
 }
 
 .page-banner::before {
-  background-image: url('../figures/banner.png')
+  background-image: url('../figures/banner.webp')
 }
 
 .home-content {
@@ -2172,7 +2172,7 @@ footer a:hover {
 }
 
 .home-hero {
-  background: #ebe7dc url('../figures/background.png') center/cover no-repeat
+  background: #ebe7dc url('../figures/background.webp') center/cover no-repeat
 }
 
 .home-art {
@@ -2196,7 +2196,7 @@ footer a:hover {
 
 @media(max-width:650px) {
   .home-hero {
-    background-image: url('../figures/background.png')
+    background-image: url('../figures/background.webp')
   }
 
   .home-art {
@@ -2267,7 +2267,7 @@ button {
 }
 
 .home-hero {
-  background: #d6e0e3 url('../figures/background.png') center/cover no-repeat
+  background: #d6e0e3 url('../figures/background.webp') center/cover no-repeat
 }
 
 .home-veil {
@@ -2467,7 +2467,7 @@ button {
 }
 
 .page-banner::before {
-  background: url('../figures/banner.png') center 42%/cover no-repeat;
+  background: url('../figures/banner.webp') center 42%/cover no-repeat;
   filter: saturate(.7)
 }
 
@@ -2631,7 +2631,7 @@ button {
 
 @media(max-width:650px) {
   .home-hero {
-    background-image: url('../figures/background.png');
+    background-image: url('../figures/background.webp');
     background-position: 52% center
   }
 
@@ -2693,7 +2693,7 @@ button {
   width: 100%;
   aspect-ratio: auto;
   min-height: clamp(650px, 55vw, 820px);
-  background-image: url('../figures/background.png')
+  background-image: url('../figures/background.webp')
 }
 
 .home-hero .celestial {
@@ -4202,7 +4202,7 @@ body:has(.home-hero) .home-hero {
 
 /* Refined paintings, open water, and a soft seam in the moving scroll. */
 .home-hero {
-  background-image: url('../figures/background.png')
+  background-image: url('../figures/background.webp')
 }
 
 .page-banner::before {
@@ -4297,7 +4297,7 @@ body:has(.home-hero) .home-hero {
 }
 
 .page-banner::before {
-  background-image: url('../figures/banner.png');
+  background-image: url('../figures/banner.webp');
   background-repeat: repeat-x;
   background-size: auto 324px;
   background-position: calc(50% - 486px) 50%;
