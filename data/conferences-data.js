@@ -24,7 +24,7 @@ window.CONFERENCES = [
     "name": "London Exoplanet Day",
     "date": "19 Dec 2023",
     "presentation": "The ExoMol database: developments and the 2024 data release",
-    "eventUrl": "/data/JingxinZhang_CV.pdf#page=3",
+    "eventUrl": "",
     "abstractUrl": "",
     "city": "London",
     "country": "UK"
