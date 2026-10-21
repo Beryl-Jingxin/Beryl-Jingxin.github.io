@@ -5587,3 +5587,11 @@ body:has(.contact-page)>footer {
 .contact-page {
   flex: 1
 }
+
+.conference-row .visit .abstract-link {
+  order: 1
+}
+
+.conference-row .visit .event-link {
+  order: 2
+}

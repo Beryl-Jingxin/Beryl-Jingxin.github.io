@@ -33,9 +33,9 @@ for (const [kind, id] of [['talk', '#talk-list'], ['poster', '#poster-list']]) {
   container.innerHTML = conferences.filter(item => item.kind === kind).map(item => {
     const eventLabel = item.eventUrl && item.eventUrl.includes('.pdf#page=') ? 'CV record' : 'Event';
     const eventLink = item.eventUrl
-      ? `<a href="${escapeHtml(item.eventUrl)}" target="_blank" rel="noopener noreferrer">${eventLabel}</a>` : '';
+      ? `<a class="event-link" href="${escapeHtml(item.eventUrl)}" target="_blank" rel="noopener noreferrer">${eventLabel}</a>` : '';
     const abstractLink = item.abstractUrl
-      ? `<a href="${escapeHtml(item.abstractUrl)}" target="_blank" rel="noopener noreferrer">Abstract</a>` : '';
+      ? `<a class="abstract-link" href="${escapeHtml(item.abstractUrl)}" target="_blank" rel="noopener noreferrer">Abstract</a>` : '';
     const dateParts = item.date.match(/^(.*)\s(\d{4})$/);
     const eventDate = dateParts ? `<span class="conference-year">${escapeHtml(dateParts[2])}</span><span class="conference-days">${escapeHtml(dateParts[1])}</span>` : escapeHtml(item.date);
     const links = abstractLink + eventLink;
