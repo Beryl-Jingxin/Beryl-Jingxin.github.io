@@ -200,8 +200,6 @@ def buildConferences():
         if len(place) != 2 or not all(place):
             raise ValueError(f'Conference location must contain city and country: {item["name"]}')
         item['city'], item['country'] = place
-        if not item['eventUrl']:
-            item['eventUrl'] = '/data/JingxinZhang_CV.pdf#page=3'
     (DATA / 'conferences-data.js').write_text('window.CONFERENCES = ' + json.dumps(records, ensure_ascii=False, indent=2) + ';\n')
     return sum(item['kind'] == 'talk' for item in records), sum(item['kind'] == 'poster' for item in records)
 

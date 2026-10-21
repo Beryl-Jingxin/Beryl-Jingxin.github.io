@@ -31,13 +31,16 @@ for (const [kind, id] of [['talk', '#talk-list'], ['poster', '#poster-list']]) {
   const container = document.querySelector(id);
   if (!container) continue;
   container.innerHTML = conferences.filter(item => item.kind === kind).map(item => {
-    const eventLabel = item.eventUrl.includes('.pdf#page=') ? 'CV record' : 'Event';
-    const eventLink = `<a href="${escapeHtml(item.eventUrl)}" target="_blank" rel="noopener noreferrer">${eventLabel}</a>`;
+    const eventLabel = item.eventUrl && item.eventUrl.includes('.pdf#page=') ? 'CV record' : 'Event';
+    const eventLink = item.eventUrl
+      ? `<a href="${escapeHtml(item.eventUrl)}" target="_blank" rel="noopener noreferrer">${eventLabel}</a>` : '';
     const abstractLink = item.abstractUrl
       ? `<a href="${escapeHtml(item.abstractUrl)}" target="_blank" rel="noopener noreferrer">Abstract</a>` : '';
     const dateParts = item.date.match(/^(.*)\s(\d{4})$/);
     const eventDate = dateParts ? `<span class="conference-year">${escapeHtml(dateParts[2])}</span><span class="conference-days">${escapeHtml(dateParts[1])}</span>` : escapeHtml(item.date);
-    return `<article class="conference-row"><time>${eventDate}</time><div class="conference-main"><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.presentation)}</p></div><p class="conference-place"><span>${escapeHtml(item.city)}</span><span>${escapeHtml(item.country)}</span></p><div class="visit">${eventLink}${abstractLink}</div></article>`;
+    const links = eventLink + abstractLink;
+    const visit = links ? `<div class="visit">${links}</div>` : '';
+    return `<article class="conference-row"><time>${eventDate}</time><div class="conference-main"><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.presentation)}</p></div><p class="conference-place"><span>${escapeHtml(item.city)}</span><span>${escapeHtml(item.country)}</span></p>${visit}</article>`;
   }).join('');
 }
 
