@@ -5,23 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#e9eeec">
-  <meta name="description" content="Jingxin Zhang: molecular spectroscopy, scientific computing, and astrophysical spectral analysis.">
+  <meta name="description"
+    content="Jingxin Zhang: molecular spectroscopy, scientific computing, and astrophysical spectral analysis.">
   <title>Research | Jingxin Zhang</title>
   <link rel="stylesheet" href="theme/style.css">
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
-  
+
   <script defer src="theme/script.js"></script>
 </head>
 
 <body>
-<a class="skip-link" href="research.html#main">Skip to content</a>
+  <a class="skip-link" href="research.html#main">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="shell header-inner">
       <a class="wordmark" href="index.html" aria-label="Jingxin Zhang, home">Jingxin <span>Zhang</span><i
           aria-hidden="true"></i></a>
-      <nav aria-label="Main navigation"><a href="index.html">Home</a> <a href="about.html">About</a> <a href="research.html" aria-current="page">Research</a> <a href="publications.html">Publications</a> <a href="conferences.html">Conferences</a> <a href="contact.html">Contact</a></nav>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a> <a href="about.html">About</a> <a
+          href="research.html" aria-current="page">Research</a> <a href="publications.html">Publications</a> <a
+          href="conferences.html">Conferences</a> <a href="contact.html">Contact</a></nav>
       <a class="header-cv" href="data/JingxinZhang_CV.pdf">CV <span class="link-glyph" aria-hidden="true"></span></a>
     </div>
   </header>
@@ -56,22 +59,23 @@
           <div class="research-project-image project-gallery" data-carousel aria-label="PyExoCross research figures"
             aria-roledescription="carousel">
             <div class="gallery-stage">
-              <figure class="gallery-slide is-active" aria-hidden="false"><a
-                  href="figures/PyExoCross/pyexocross_nlte.pdf" target="_blank" rel="noopener noreferrer"><img
-                    src="figures/PyExoCross/pyexocross_nlte-preview.png"
-                    alt="LTE and non-LTE absorption cross sections and their relative difference" loading="lazy"></a>
+              <figure class="gallery-slide is-active" aria-hidden="false">
+                <a href="figures/PyExoCross/pyexocross_workflow.pdf" target="_blank" rel="noopener noreferrer">
+                  <img src="figures/PyExoCross/pyexocross_workflow-preview.png" alt="PyExoCross workflow from molecular databases to spectra" loading="lazy">
+                </a>
+                <figcaption>From line lists to physical spectra</figcaption>
+              </figure>
+              <figure class="gallery-slide" aria-hidden="true">
+                <a href="figures/PyExoCross/pyexocross_nlte.pdf" target="_blank" rel="noopener noreferrer">
+                  <img src="figures/PyExoCross/pyexocross_nlte-preview.png" alt="LTE and non-LTE absorption cross sections and their relative difference" loading="lazy">
+                </a>
                 <figcaption>LTE and non-LTE spectral synthesis</figcaption>
               </figure>
-              <figure class="gallery-slide" aria-hidden="true"><a href="figures/PyExoCross/compare_profiles.pdf"
-                  target="_blank" rel="noopener noreferrer"><img src="figures/PyExoCross/compare_profiles-preview.png"
-                    alt="Comparison of Gaussian, Lorentzian, and Voigt line profiles" loading="lazy"></a>
+              <figure class="gallery-slide" aria-hidden="true">
+                <a href="figures/PyExoCross/compare_profiles.pdf" target="_blank" rel="noopener noreferrer">
+                  <img src="figures/PyExoCross/compare_profiles-preview.png" alt="Comparison of Gaussian, Lorentzian, and Voigt line profiles" loading="lazy">
+                </a>
                 <figcaption>Line-profile methods</figcaption>
-              </figure>
-              <figure class="gallery-slide" aria-hidden="true"><a href="figures/PyExoCross/pyexocross_workflow.pdf"
-                  target="_blank" rel="noopener noreferrer"><img
-                    src="figures/PyExoCross/pyexocross_workflow-preview.png"
-                    alt="PyExoCross workflow from molecular databases to spectra" loading="lazy"></a>
-                <figcaption>From line lists to physical spectra</figcaption>
               </figure>
             </div>
             <div class="gallery-controls"><button type="button" class="gallery-prev"
@@ -86,27 +90,30 @@
             <p>An open source Python framework for processing atomic and molecular line lists. It calculates
               thermodynamic and radiative quantities, stick spectra, and absorption and emission cross sections under
               LTE and non-LTE conditions.</p>
-            <div class="project-links"><a href="https://github.com/ExoMol/PyExoCross" target="_blank"
-                rel="noopener noreferrer">GitHub</a><a href="https://pyexocross.readthedocs.io/en/latest/"
-                target="_blank" rel="noopener noreferrer">Documentation</a><a
-                href="https://pypi.org/project/pyexocross/" target="_blank" rel="noopener noreferrer">PyPI</a></div>
+            <div class="project-links">
+              <a href="https://doi.org/10.1093/rasti/rzae016" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://github.com/ExoMol/PyExoCross" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://pyexocross.readthedocs.io/en/latest/" target="_blank"
+                rel="noopener noreferrer">Documentation</a>
+              <a href="https://pypi.org/project/pyexocross/" target="_blank" rel="noopener noreferrer">PyPI</a>
+            </div>
           </div>
         </article>
         <article class="project-feature">
           <div class="research-project-image project-gallery" data-carousel aria-label="ExoMolHR research figures"
             aria-roledescription="carousel">
             <div class="gallery-stage">
-              <figure class="gallery-slide is-active" aria-hidden="false"><a
-                  href="figures/ExoMolHR/ExoMolHR_stick_spectra.png" target="_blank" rel="noopener noreferrer"><img
-                    src="figures/ExoMolHR/ExoMolHR_stick_spectra.png"
-                    alt="High-resolution stick spectra across multiple isotopologues" loading="lazy"></a>
-                <figcaption>High-resolution molecular spectra</figcaption>
-              </figure>
-              <figure class="gallery-slide gallery-slide-portrait" aria-hidden="true"><a
-                  href="figures/ExoMolHR/ExoMolHR_website.pdf" target="_blank" rel="noopener noreferrer"><img
-                    src="figures/ExoMolHR/ExoMolHR_website-preview.png" alt="ExoMolHR database spectrum viewer"
-                    loading="lazy"></a>
+              <figure class="gallery-slide gallery-slide-portrait is-active" aria-hidden="false">
+                <a href="figures/ExoMolHR/ExoMolHR_website.pdf" target="_blank" rel="noopener noreferrer">
+                  <img src="figures/ExoMolHR/ExoMolHR_website-preview.png" alt="ExoMolHR database spectrum viewer" loading="lazy">
+                </a>
                 <figcaption>Database and spectrum viewer</figcaption>
+              </figure>
+              <figure class="gallery-slide" aria-hidden="true">
+                <a href="figures/ExoMolHR/ExoMolHR_stick_spectra.png" target="_blank" rel="noopener noreferrer">
+                  <img src="figures/ExoMolHR/ExoMolHR_stick_spectra.png" alt="High-resolution stick spectra across multiple isotopologues" loading="lazy">
+                </a>
+                <figcaption>High-resolution molecular spectra</figcaption>
               </figure>
             </div>
             <div class="gallery-controls"><button type="button" class="gallery-prev"
@@ -121,8 +128,10 @@
             <p>A high resolution molecular spectroscopic database and web platform. It provides empirically refined line
               positions, uncertainty-aware transition selection, and tools for querying, visualising, and downloading
               spectral data.</p>
-            <div class="project-links"><a href="https://www.exomol.com/exomolhr/" target="_blank"
-                rel="noopener noreferrer">Database website</a></div>
+            <div class="project-links">
+              <a href="https://doi.org/10.3847/1538-4365/ada288" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://www.exomol.com/exomolhr/" target="_blank" rel="noopener noreferrer">Database website</a>
+            </div>
           </div>
         </article>
         <article class="project-feature"><span class="roman">03 / SPECTRAL INFERENCE</span>
