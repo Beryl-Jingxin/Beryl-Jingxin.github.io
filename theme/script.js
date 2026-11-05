@@ -14,7 +14,7 @@ if (list) {
       const link = item.doi
         ? `<a class="pub-link" href="https://doi.org/${encodeURIComponent(item.doi)}" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for ${escapeHtml(item.titleHtml.replace(/<[^>]*>/g, ''))}">DOI</a>`
         : `<span class="status">${escapeHtml(item.status)}</span>`;
-      return `<article class="publication"><span class="pub-year">${escapeHtml(item.year)}</span><div><h3>${title}</h3><p class="pub-authors">${item.authorsHtml}</p><p class="pub-journal">${escapeHtml(item.source)}</p></div>${link}</article>`;
+      return `<article class="publication"><span class="pub-year">${escapeHtml(item.year)}</span><div><h3>${title}</h3><p class="pub-authors">${item.authorsHtml}</p><p class="pub-journal">${item.source}</p></div>${link}</article>`;
     }).join('');
     buttons.forEach(button => {
       const active = button.dataset.filter === filter;

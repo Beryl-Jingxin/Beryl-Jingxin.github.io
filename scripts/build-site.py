@@ -121,20 +121,44 @@ def authorsHtml(value, correspondents):
 
 
 def sourceLabel(entry, status):
-    journal = entry.get('journal', '')
+    journal = escape(entry.get('journal', ''))
     if status:
-        return ' · '.join(part for part in (journal, status) if part)
+        return ' · '.join(part for part in (journal, escape(status)) if part)
     volume = entry.get('volume', '')
-    pages = entry.get('pages', '').replace('-', '–')
-    parts = [part for part in (journal, volume, pages) if part]
-    return ' '.join(parts)
+    pages = escape(entry.get('pages', '')).replace('-', '–')
+    volumeHtml = f'<strong>{escape(volume)}</strong>' if volume else ''
+    parts = [part for part in (journal, volumeHtml, pages) if part]
+    return ', '.join(parts)
+
+
+def mathHtml(value):
+    parts = []
+    index = 0
+    while index < len(value):
+        marker = value[index]
+        if marker not in '^_':
+            parts.append(marker)
+            index += 1
+            continue
+
+        tag = 'sup' if marker == '^' else 'sub'
+        index += 1
+        if index == len(value):
+            parts.append(marker)
+            break
+        if value[index] == '{':
+            token = braceValue(value, index)
+            index += len(token) + 2
+        else:
+            token = value[index]
+            index += 1
+        parts.append(f'<{tag}>{token}</{tag}>')
+    return ''.join(parts)
 
 
 def titleHtml(value):
     value = escape(value)
-    value = value.replace('15NH3', '<sup>15</sup>NH<sub>3</sub>')
-    value = value.replace('$^{15}$NH$_3$', '<sup>15</sup>NH<sub>3</sub>')
-    return value
+    return re.sub(r'\$([^$]+)\$', lambda match: mathHtml(match.group(1)), value)
 
 
 def buildPublications():
