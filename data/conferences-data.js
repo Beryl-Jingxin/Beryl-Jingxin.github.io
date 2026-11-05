@@ -62,7 +62,7 @@ window.CONFERENCES = [
   {
     "kind": "poster",
     "name": "Spectroscopy of exoplanets at high resolution",
-    "date": "6 Feb - 7 Feb 2023",
+    "date": "6 Feb – 7 Feb 2023",
     "presentation": "New features in the ExoMol database",
     "eventUrl": "https://royalsociety.org/science-events-and-lectures/2023/02/spectroscopy-exoplanets/",
     "abstractUrl": "",

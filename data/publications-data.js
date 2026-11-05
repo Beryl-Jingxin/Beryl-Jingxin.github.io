@@ -14,11 +14,11 @@ window.PUBLICATIONS = [
   {
     "key": "zjx11",
     "year": "2026",
-    "titleHtml": "MET-C3: Mixed Exogenous–Temporal Dependency Modeling for Non-Stationary Time Series Forecasting",
+    "titleHtml": "MET-C3: Mixed Exogenous-Temporal Dependency Modeling for Non-Stationary Time Series Forecasting",
     "authorsHtml": "Qingyang Liu, <strong>Jingxin Zhang</strong><sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Haohua Duan<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Ramin Yahyapour<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
     "source": "Submitted",
     "lead": true,
-    "leadOrder": 3,
+    "leadOrder": 2,
     "role": "corresponding",
     "doi": "",
     "status": "Submitted"
@@ -28,12 +28,12 @@ window.PUBLICATIONS = [
     "year": "2026",
     "titleHtml": "PyExoCross 2.0: A Python Framework for LTE and non-LTE Spectra, Cross Sections, and Spectroscopic Post-processing of Atomic and Molecular Line Lists",
     "authorsHtml": "<strong>Jingxin Zhang</strong><sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Sergei N Yurchenko, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
-    "source": "RAS Techniques and Instruments · Submitted",
+    "source": "RAS Techniques and Instruments rzag094",
     "lead": true,
-    "leadOrder": 2,
+    "leadOrder": 3,
     "role": "first-corresponding",
-    "doi": "",
-    "status": "Submitted"
+    "doi": "10.1093/rasti/rzag094",
+    "status": ""
   },
   {
     "key": "zjx9",
@@ -49,10 +49,10 @@ window.PUBLICATIONS = [
   },
   {
     "key": "zjx8",
-    "year": "2025",
-    "titleHtml": "ExoAtom: A Database of Atomic Spectra in ExoMol Format",
+    "year": "2026",
+    "titleHtml": "ExoAtom: a database of atomic spectra in ExoMol format",
     "authorsHtml": "Qing-He Ni, Rujia Wang, Tianyang Xie, <strong>Jingxin Zhang</strong>, Christian Hill, Sergei N Yurchenko, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
-    "source": "RAS Techniques and Instruments 5 rzaf065",
+    "source": "RAS Techniques and Instruments 5 1–23",
     "lead": false,
     "leadOrder": null,
     "role": "coauthor",
@@ -62,7 +62,7 @@ window.PUBLICATIONS = [
   {
     "key": "zjx7",
     "year": "2025",
-    "titleHtml": "ExoMol photodissociation cross-sections – II. Continuum absorption and pre-dissociation spectra for the hydroxyl radical",
+    "titleHtml": "ExoMol photodissociation cross-sections - II. Continuum absorption and pre-dissociation spectra for the hydroxyl radical",
     "authorsHtml": "Georgi B Mitev, Marco Pezzella, Charles A Bowesman, <strong>Jingxin Zhang</strong>, Sergei N Yurchenko, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
     "source": "Monthly Notices of the Royal Astronomical Society 539 3732–3740",
     "lead": false,
@@ -86,7 +86,7 @@ window.PUBLICATIONS = [
   {
     "key": "zjx5",
     "year": "2025",
-    "titleHtml": "ExoMol line lists – LXI. A trihybrid line list for rovibronic transitions of the hydroxyl radical (OH)",
+    "titleHtml": "ExoMol line lists - LXI. A trihybrid line list for rovibronic transitions of the hydroxyl radical (OH)",
     "authorsHtml": "Georgi B Mitev, Charles A Bowesman, <strong>Jingxin Zhang</strong>, Sergei N Yurchenko, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
     "source": "Monthly Notices of the Royal Astronomical Society 536 3401–3420",
     "lead": false,
@@ -98,6 +98,18 @@ window.PUBLICATIONS = [
   {
     "key": "zjx4",
     "year": "2024",
+    "titleHtml": "ExoMol line lists - LX. Molecular line list for the ammonia isotopologue <sup>15</sup>NH<sub>3</sub>",
+    "authorsHtml": "Sergei N Yurchenko<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Charles A Bowesman, Ryan P Brady, Elizabeth R Guest, Kyriaki Kefala, Georgi B Mitev, Alec Owens, Armando N Perri, Marco Pezzella, Oleksiy Smola, Andrei Sokolov, <strong>Jingxin Zhang</strong>, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
+    "source": "Monthly Notices of the Royal Astronomical Society 533 3442–3456",
+    "lead": false,
+    "leadOrder": null,
+    "role": "coauthor",
+    "doi": "10.1093/mnras/stae1849",
+    "status": ""
+  },
+  {
+    "key": "zjx3",
+    "year": "2024",
     "titleHtml": "The 2024 release of the ExoMol database: Molecular line lists for exoplanet and other hot atmospheres",
     "authorsHtml": "Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Sergei N Yurchenko, <strong>Jingxin Zhang</strong>, Charles A Bowesman, Ryan P Brady, Jeanna Buldyreva, Katy L Chubb, Robert R Gamache, Maire N Gorman, Elizabeth R Guest, Christian Hill, Kyriaki Kefala, A.E Lynas-Gray, Thomas M Mellor, Laura K McKemmish, Georgi B Mitev, Irina I Mizus, Alec Owens, Zhijian Peng, Armando N Perri, Marco Pezzella, Oleg L Polyansky, Qianwei Qu, Mikhail Semenov, Oleksiy Smola, Andrei Solokov, Wilfrid Somogyi, Apoorva Upadhyay, Samuel O.M Wright, Nikolai F Zobov",
     "source": "Journal of Quantitative Spectroscopy and Radiative Transfer 326 109083",
@@ -105,18 +117,6 @@ window.PUBLICATIONS = [
     "leadOrder": null,
     "role": "coauthor",
     "doi": "10.1016/j.jqsrt.2024.109083",
-    "status": ""
-  },
-  {
-    "key": "zjx3",
-    "year": "2024",
-    "titleHtml": "ExoMol line lists – LX. Molecular line list for the ammonia isotopologue <sup>15</sup>NH<sub>3</sub>",
-    "authorsHtml": "Sergei N Yurchenko<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>, Charles A Bowesman, Ryan P Brady, Elizabeth R Guest, Kyriaki Kefala, Georgi B Mitev, Alec Owens, Armando N Perri, Marco Pezzella, Oleksiy Smola, Andrei Sokolov, <strong>Jingxin Zhang</strong>, Jonathan Tennyson<sup class=\"corresponding-mark\" aria-label=\"corresponding author\">*</sup>",
-    "source": "Monthly Notices of the Royal Astronomical Society 533 3442–3456",
-    "lead": false,
-    "leadOrder": null,
-    "role": "coauthor",
-    "doi": "10.1093/mnras/stae1849",
     "status": ""
   },
   {
