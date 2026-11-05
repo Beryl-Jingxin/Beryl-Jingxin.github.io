@@ -105,10 +105,16 @@ def publicationRoles(entries):
 def authorsHtml(value, correspondents):
     authors = []
     for author in value.split(' and '):
-        surname, given = (part.strip().rstrip('.') for part in author.split(',', 1))
-        name = f'{given} {surname}'
+        author = author.strip()
+        if ',' in author:
+            surname, given = (part.strip() for part in author.split(',', 1))
+            name = f'{given} {surname}'.strip()
+        else:
+            parts = author.split()
+            surname, given = (parts[-1], ' '.join(parts[:-1])) if parts else ('', '')
+            name = author
         label = f'<strong>{escape(name)}</strong>' if surname == 'Zhang' and given == 'Jingxin' else escape(name)
-        if (surname.lower(), given[0].lower()) in correspondents:
+        if given and (surname.lower(), given[0].lower()) in correspondents:
             label += '<sup class="corresponding-mark" aria-label="corresponding author">*</sup>'
         authors.append(label)
     return ', '.join(authors)
@@ -147,7 +153,7 @@ def buildPublications():
                         'role': role['role'], 'doi': doi, 'status': role['status']})
     records.sort(key=lambda item: (int(item['year']), list(entries).index(item['key'])), reverse=True)
     (DATA / 'publications-data.js').write_text('window.PUBLICATIONS = ' + json.dumps(records, ensure_ascii=False, indent=2) + ';\n')
-    return len(records), sum(bool(item['doi']) for item in records)
+    return len(records), sum(bool(item['doi']) for item in records), sum(item['lead'] for item in records)
 
 
 def buildConferences():
@@ -204,7 +210,7 @@ def buildConferences():
     return sum(item['kind'] == 'talk' for item in records), sum(item['kind'] == 'poster' for item in records)
 
 
-def buildPages():
+def buildPages(publicationCount, leadPublicationCount):
     template = (ROOT / 'base.html').read_text()
     pageInfo = {
         'home': ('Home | Jingxin Zhang', 'Jingxin Zhang: molecular spectroscopy, scientific computing, and astrophysical spectral analysis.'),
@@ -236,10 +242,14 @@ def buildPages():
         if not main:
             raise ValueError(f'No main content found in {pageFile}')
         markup = markup.replace('{{MAIN}}', main.group(0))
+        markup = re.sub(r'(<span data-count="lead">)[^<]*(</span>)',
+                        lambda match: f'{match.group(1)}{leadPublicationCount}{match.group(2)}', markup, count=1)
+        markup = re.sub(r'(<span data-count="all">)[^<]*(</span>)',
+                        lambda match: f'{match.group(1)}{publicationCount}{match.group(2)}', markup, count=1)
         sourcePage.write_text(markup)
 
 
-papers, dois = buildPublications()
+papers, dois, leadPapers = buildPublications()
 talks, posters = buildConferences()
-buildPages()
+buildPages(papers, leadPapers)
 print(f'Generated {papers} publications ({dois} DOI links), {talks} talks, and {posters} posters')

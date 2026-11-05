@@ -392,6 +392,16 @@ footer a:hover {
   padding-bottom: 0
 }
 
+.section-block.experience-section,
+.section-block.education-section,
+.section-block.awards-section {
+  padding: 23px 0
+}
+
+.section-block.awards-section {
+  border-bottom: 1px solid var(--line)
+}
+
 .section-block h2 {
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.2;
@@ -432,7 +442,7 @@ footer a:hover {
 }
 
 .timeline {
-  border-top: 1px solid var(--line)
+  border-top: 0
 }
 
 .timeline-item {
@@ -441,6 +451,10 @@ footer a:hover {
   gap: 35px;
   padding: 23px 0;
   border-bottom: 1px solid var(--line)
+}
+
+.timeline-item:last-child {
+  border-bottom: 0
 }
 
 .timeline-item time {
@@ -540,6 +554,10 @@ footer a:hover {
 
 .inline-links a.social-link.linkedin svg {
   color: #0A66C2;
+}
+
+.inline-links a.social-link.scholar svg {
+  color: #4285f4;
 }
 
 .project-feature {
@@ -2547,6 +2565,7 @@ button {
 .conference-row time,
 .experience-item .experience-location,
 .education-item .education-location,
+.awards-section .education-location,
 .conference-place {
   font-size: 13px;
   color: #496d82
@@ -3297,6 +3316,7 @@ button {
 
 .experience-item .experience-location,
 .education-item .education-location,
+.awards-section .education-location,
 .conference-place {
   text-align: right;
   align-items: flex-end
@@ -3320,11 +3340,12 @@ button {
 }
 
 .awards-section {
-  min-height: 220px
+  min-height: 0
 }
 
 .awards-section .timeline-item {
-  padding-top: 28px
+  grid-template-columns: 155px minmax(0, 1fr) 95px;
+  gap: 22px
 }
 
 .footer-inner {
@@ -3395,10 +3416,6 @@ button {
   .conference-row {
     grid-template-columns: 1fr 93px;
     padding: 24px 0
-  }
-
-  .awards-section {
-    padding-top: 64px
   }
 
   .footer-inner {
@@ -3680,21 +3697,6 @@ button {
   filter: drop-shadow(0 0 5px #dce7e3) drop-shadow(0 0 9px rgba(220, 231, 227, .55))
 }
 
-/* Unified CV columns and one clean divider before awards. */
-.awards-section {
-  min-height: 0
-}
-
-.awards-section .timeline {
-  border-top: 0
-}
-
-.awards-section .timeline-item {
-  grid-template-columns: 155px minmax(0, 1fr);
-  gap: 22px;
-  padding-top: 23px
-}
-
 .experience-item time,
 .education-item time,
 .awards-section time {
@@ -3711,19 +3713,24 @@ button {
 
 @media(max-width:900px) {
   .awards-section .timeline-item {
-    grid-template-columns: 135px minmax(0, 1fr);
+    grid-template-columns: 135px minmax(0, 1fr) 75px;
     gap: 14px
   }
 }
 
 @media(max-width:650px) {
   .awards-section .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 7px
+    grid-template-columns: 1fr 88px;
+    gap: 5px 12px
   }
 
-  .awards-section {
-    padding-top: 45px
+  .awards-section .timeline-item time {
+    grid-column: 1/3
+  }
+
+  .awards-section .education-location {
+    grid-column: 2;
+    grid-row: 2
   }
 }
 
@@ -3824,27 +3831,8 @@ button {
   }
 }
 
-.experience-section .timeline-item:last-child,
-.education-section .timeline-item:last-child {
-  border-bottom: 0
-}
-
-.education-section {
-  padding-bottom: 42px
-}
-
-.awards-section {
-  padding-top: 44px
-}
-
 .home-hero .celestial .orbit-galaxy.inner {
   opacity: .24
-}
-
-@media(max-width:650px) {
-  .awards-section {
-    padding-top: 40px
-  }
 }
 
 .home-hero .celestial {
@@ -5724,4 +5712,8 @@ body:has(.contact-page)>footer {
   .home-feature .feature-grid>article:first-child .project-actions>.project-action-star:nth-of-type(2) {
     display: none
   }
+}
+
+.institution {
+  font-weight: 600;
 }
